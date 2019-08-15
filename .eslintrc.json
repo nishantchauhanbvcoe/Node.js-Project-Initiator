@@ -8,8 +8,6 @@
     "modules": true
   },
 
-  "extends": "eslint:recommended",
-
   "rules": {
     "accessor-pairs": ["error", {
       "getWithoutSet": false,

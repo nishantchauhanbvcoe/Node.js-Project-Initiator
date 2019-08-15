@@ -1,0 +1,44 @@
+{
+  "env": {
+    "es6": true
+  },
+
+  "ecmaFeatures": {
+    // env=es6 doesn't include modules, which we are using
+    "modules": true
+  },
+
+  "extends": "eslint:recommended",
+
+  "rules": {
+    "accessor-pairs": ["error", {
+      "getWithoutSet": false,
+      "setWithoutGet": true
+    }],
+    "no-plusplus": "off",
+    "max-depth": ["warn", 8],
+    "max-len": ["warn", 132],
+    "max-nested-callbacks": ["warn", 8],
+    "max-params": ["warn", 8],
+    "no-multi-spaces": "off",
+    "no-use-before-define": "warn",
+    "no-multi-str": "off",
+    "spaced-comment": "off",
+    "no-console": "warn",
+    "consistent-return": "off",
+    "func-names": "off",
+    "object-shorthand": "off",
+    "no-process-exit": "off",
+    "no-param-reassign": "off",
+    "no-return-await": "off",
+    "no-underscore-dangle": "off",
+    "class-methods-use-this": "off",
+    "prefer-destructuring": ["error", {
+      "object": true,
+      "array": false
+    }],
+    "no-unused-vars": ["warn", {
+      "argsIgnorePattern": "req|res|next|val"
+    }]
+  }
+}
